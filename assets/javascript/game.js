@@ -10,17 +10,11 @@ $(document).ready(function() {
         losses: 0,
     }
 
-    // ----------- display
-
-
-
     // ----------- the game
 
     $(".crystal").click(function(e) {
 
-        console.log($(this).attr("value"));
         state.current += parseInt($(this).attr("value"));
-        console.log("state.current: " + state.current)
         $("#score").text(state.current);
 
         if (state.current === state.target) {
@@ -42,10 +36,8 @@ $(document).ready(function() {
         $("#wins").text(state.wins);
         $("#losses").text(state.losses);
 
-
         state.current = 0;
         state.crystalValue = [];
-
 
         $("#score").text(state.current);
 
@@ -57,11 +49,8 @@ $(document).ready(function() {
             state.crystalValue.push((Math.floor(Math.random() * 12)) +
                 1);
             $("#crystal-" + (i + 1)).attr("value", state.crystalValue[i])
-            console.log(state.crystalValue)
-        }
 
-        console.log("wins: " + state.wins);
-        console.log("losses: " + state.losses);
+        }
     };
 
     // --------- initialize application
