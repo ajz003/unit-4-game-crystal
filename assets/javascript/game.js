@@ -18,11 +18,13 @@ $(document).ready(function() {
         $("#score").text(state.current);
 
         if (state.current === state.target) {
-            alert("You win!");
+            $("#loser").text("");
+            $("#winner").text("You win!!!");
             state.wins++;
             init();
         } else if (state.current > state.target) {
-            alert("You lose.");
+            $("#winner").text("");
+            $("#loser").text("You lose.");
             state.losses++;
             init();
         }
