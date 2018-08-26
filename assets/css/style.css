@@ -75,24 +75,38 @@ h3 {
     color: #48967d;
     font-weight: bold;
     font-size: 36px;
+    display: inline-block;
 }
 
 #score {
     color: #cc1c05;
     font-weight: bold;
     font-size: 36px;
+    display: inline-block;
 }
 
-#wins {
+#wins,
+#winner {
     color: #153eba;
     font-weight: bold;
     font-size: 36px;
+    display: inline-block;
 }
 
-#losses {
+#winner {
+    margin-left: 200px;
+}
+
+#losses,
+#loser {
     color: #d1c000;
     font-weight: bold;
     font-size: 36px;
+    display: inline-block;
+}
+
+#loser {
+    margin-left: 200px;
 }
 
 #rainbow {
